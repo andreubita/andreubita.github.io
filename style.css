@@ -55,7 +55,7 @@ button{
     border: 1px solid #aa00aa;
     font-size: 18px;
     border-radius: 4px;
-    transition: .6s;
+    transition: .4s;
     overflow: hidden;
 }
 
@@ -71,7 +71,7 @@ button:before{
     height: 100%;
     left: 0;
     top: 0;
-    opacity: .5s;
+    opacity: .3s;
     filter: blur(30px);
     transform: translateX(-130px) skewX(-15deg);
 }
@@ -96,12 +96,12 @@ button:hover{
 
 button:hover:before{
     transform: translateX(300px) skewX(-15deg);
-    opacity: .6;
-    transition: .7s;
+    opacity: .4;
+    transition: .5s;
 }
 
 button:hover:before{
     transform: translateX(300px) skewX(-15deg);
     opacity: 1;
-    transition: .7s;
+    transition: .5s;
 }
