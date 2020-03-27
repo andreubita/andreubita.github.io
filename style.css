@@ -1,0 +1,107 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #000000;
+    animation: pageLoad 1.5s;
+}
+
+.content{
+    width: 100%;
+    max-width: 960;
+    margin: 0 auto;
+}
+
+.content img{
+    margin-bottom: 20px;
+}
+
+.content h3{
+    color: white;
+}
+
+.socials a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@keyframes pageLoad{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+button{
+    background: none;
+    color: #ccc;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #aa00aa;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+button:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover{
+    background: #aa00aa;
+    cursor: pointer;
+}
+
+button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
