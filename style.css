@@ -10,7 +10,7 @@ body{
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    background-color: #000000;
+    background-color: black;
     animation: pageLoad 1.5s;
 }
 
@@ -52,7 +52,7 @@ button{
     color: #ccc;
     width: 150px;
     height: 50px;
-    border: 1px solid #aa00aa;
+    border: 1px solid #380808;
     font-size: 18px;
     border-radius: 4px;
     transition: .4s;
@@ -90,7 +90,7 @@ button:after{
 }
 
 button:hover{
-    background: #aa00aa;
+    background: #380808;
     cursor: pointer;
 }
 
