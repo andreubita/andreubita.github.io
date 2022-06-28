@@ -16,23 +16,26 @@ body {
 
 h1 {
     color: rgb(146, 25, 25);
-    font-size: 50px;
+    font-size: 100px;
     font-weight: bold;
     text-align: center;
 }
 
 h2 {
     color: rgb(193, 190, 190);
+    font-size: 60px;
 }
 
 a{
     padding-left: 10px;
     color: #921d1d;
     text-decoration: none;
+    font-size: 40px;
 }
 
 p {
-    color: rgb(177, 169, 169)
+    color: rgb(177, 169, 169);
+    font-size: 40px;
 }
 
 @keyframes pageLoad{
