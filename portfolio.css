@@ -1,0 +1,50 @@
+/* html, body{
+    height: 100%;
+} */
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    animation: pageLoad 1.5s;
+}
+
+h1 {
+    color: rgb(146, 25, 25);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(193, 190, 190);
+}
+
+a{
+    padding-left: 10px;
+    color: #921d1d;
+    text-decoration: none;
+}
+
+p {
+    color: rgb(177, 169, 169)
+}
+
+@keyframes pageLoad{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
